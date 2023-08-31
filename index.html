@@ -1,0 +1,2717 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)https://white-math-2749.animaapp.io/ -->
+<html>
+<head>
+    <meta http-equiv="Content-Type"
+          content="text/html; charset=UTF-8">
+    <style type="text/css">.turbo-progress-bar {
+        position: fixed;
+        display: block;
+        top: 0;
+        left: 0;
+        height: 3px;
+        background: #0076ff;
+        z-index: 9999;
+        transition: width 300ms ease-out,
+        opacity 150ms 150ms ease-in;
+        transform: translate3d(0, 0, 0);
+    }
+    </style>
+    <style id="st_globalStyles">
+        /* SCROLLBAR */
+        .link{
+            cursor: pointer;
+        }
+        [dark-scroll]::-webkit-scrollbar {
+            width: 10px;
+            height: 10px;
+        }
+
+        [dark-scroll]::-webkit-scrollbar-track-piece {
+            background-color: #2b2b2b;
+            border: 1px solid #1d1d1d;
+        }
+
+        [dark-scroll]::-webkit-scrollbar-thumb {
+            height: 10px;
+            background-color: #4d4d4d;
+        }
+
+        [dark-scroll]::-webkit-scrollbar-thumb:hover {
+            background-color: #5a5a5a;
+        }
+
+        /* LOAD PROGRESS */
+
+        .turbolinks-progress-bar {
+            height: 3px;
+            background-color: #ff6250;
+        }
+
+        /* GROUPING */
+
+        [data-id].ui-selecting {
+            box-shadow: inset 0 0 0 1px #4285f4 !important;
+        }
+
+        [data-id].ui-selected {
+            box-shadow: inset 0 0 0 1px #4285f4 !important;
+        }
+
+        /* CURSOR */
+
+        body[mode='comments'] * {
+            cursor: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAzMCAzMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik00LjkxNjQ4IDIzLjQxMDlDNS40OTE1MyAyMi45ODg3IDUuOTMxNzkgMjIuMzkzNSA2LjIzMjggMjEuNjQwN0M0Ljc5MDY5IDE5LjczODMgNCAxNy4zOTMzIDQgMTQuOTk3NUM0IDguOTM0MSA4LjkzMjgyIDQgMTUuMDAyMiA0QzIxLjA3MTcgNCAyNiA4LjkzOTE5IDI2IDE1LjAwMjVDMjYgMjEuMDY1OSAyMS4wNjcyIDI2IDE0Ljk5NzggMjZDMTIuOTg5NiAyNiAxMS4wMzUzIDI1LjQ1NTcgOS4zMjM2NyAyNC40MjMxQzguNDI5NjUgMjQuOTU3MiA3LjQxNDM0IDI1LjIyNjggNi4zMDAxOCAyNS4yMjY4QzUuOTU0MjYgMjUuMjI2OCA1LjU5OTM1IDI1LjIwMTQgNS4yNTM0MiAyNS4xNDU0QzQuOTAzIDI1LjA4OTUgNC42Mjg5NiAyNC44MDQ2IDQuNTUyNTggMjQuNDE4QzQuNDc2MjEgMjQuMDI2NCA0LjYxOTk3IDIzLjYyOTYgNC45MTY0OCAyMy40MTA5WiIgZmlsbD0iI0ZGNjI1MCIvPgo8L3N2Zz4K') 0 24,
+            auto !important;
+        }
+
+        body[mode='code'] [data-id]:not(.hidden) {
+            cursor: default;
+        }
+
+        /* default node state */
+
+        body[mode='code'] [data-id]:not(.hidden), body[mode='comments'] [data-id]:not(.hidden) {
+            pointer-events: all;
+        }
+
+        /* is_image */
+
+        body[mode='code'] [data-id].is_image [data-id], body[mode='comments'] [data-id].is_image [data-id] {
+            pointer-events: none !important;
+        }
+
+        /* without a data-id or ignored */
+
+        [data-id].ignore, body[mode='code'] *:not([data-id]) {
+            pointer-events: none !important;
+        }
+
+        /* disable transforms for ignored elements */
+
+
+        body[mode='code'] [data-id]:hover {
+            transform: none !important;
+        }
+
+    </style>
+    <meta name="viewport"
+          content="width=1440, maximum-scale=1.0">
+    <link rel="shortcut icon"
+          type="image/png"
+          href="https://animaproject.s3.amazonaws.com/home/favicon.png">
+    <meta name="og:type"
+          content="website">
+    <meta name="twitter:card"
+          content="photo">
+    <script id="anima-hotspots-script"
+            src="./index_files/hotspots.js"></script>
+    <style id="hotspots-styles">
+        .hotspot {
+            position: absolute;
+            border: 1px solid #2a9fd8;
+            background: rgba(0, 173, 255, 0.54);
+            opacity: 0;
+            z-index: -1;
+            pointer-events: none;
+        }
+    </style>
+    <script id="s_turbo"
+            src="./index_files/turbo.es2017-umd.js"></script>
+    <script id="anima-overrides-script"
+            src="./index_files/overrides.js"></script>
+    <script src="./index_files/timeline.js"></script>
+    <style>
+        @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+        @import url("https://fonts.googleapis.com/css?family=Inter:900,400,600,500,700");
+
+        /* The following line is used to measure usage of this code. You can remove it if you want. */
+        /*@import url("https://px.animaapp.com/64f02bc385c1bf1a9cb5bf5b.64f02bc485c1bf1a9cb5bf5e.NYwW096.hch.png");*/
+
+
+        .screen textarea:focus,
+        .screen input:focus {
+            outline: none;
+        }
+
+        .screen * {
+            -webkit-font-smoothing: antialiased;
+            box-sizing: border-box;
+        }
+
+        .screen div {
+            -webkit-text-size-adjust: none;
+        }
+
+        .component-wrapper a {
+            display: contents;
+            pointer-events: auto;
+            text-decoration: none;
+        }
+
+        .component-wrapper * {
+            -webkit-font-smoothing: antialiased;
+            box-sizing: border-box;
+            pointer-events: none;
+        }
+
+        .component-wrapper a *,
+        .component-wrapper input,
+        .component-wrapper video,
+        .component-wrapper iframe {
+            pointer-events: auto;
+        }
+
+        .component-wrapper.not-ready,
+        .component-wrapper.not-ready * {
+            visibility: hidden !important;
+        }
+
+        .screen a {
+            display: contents;
+            text-decoration: none;
+        }
+
+        .full-width-a {
+            width: 100%;
+        }
+
+        .full-height-a {
+            height: 100%;
+        }
+
+        .container-center-vertical {
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .container-center-vertical > * {
+            flex-shrink: 0;
+            pointer-events: auto;
+        }
+
+        .container-center-horizontal {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            pointer-events: none;
+            width: 100%;
+        }
+
+        .container-center-horizontal > * {
+            flex-shrink: 0;
+            pointer-events: auto;
+        }
+
+        .auto-animated div {
+            --z-index: -1;
+            opacity: 0;
+            position: absolute;
+        }
+
+        .auto-animated input {
+            --z-index: -1;
+            opacity: 0;
+            position: absolute;
+        }
+
+        .auto-animated .container-center-vertical,
+        .auto-animated .container-center-horizontal {
+            opacity: 1;
+        }
+
+        .overlay-base {
+            display: none;
+            height: 100%;
+            opacity: 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        .overlay-base.animate-appear {
+            align-items: center;
+            animation: reveal 0.3s ease-in-out 1 normal forwards;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            opacity: 0;
+        }
+
+        .overlay-base.animate-disappear {
+            animation: reveal 0.3s ease-in-out 1 reverse forwards;
+            display: block;
+            opacity: 1;
+            pointer-events: none;
+        }
+
+        .overlay-base.animate-disappear * {
+            pointer-events: none;
+        }
+
+        @keyframes reveal {
+            from {
+                opacity: 0
+            }
+            to {
+                opacity: 1
+            }
+        }
+
+        .animate-nodelay {
+            animation-delay: 0s;
+        }
+
+        .align-self-flex-start {
+            align-self: flex-start;
+        }
+
+        .align-self-flex-end {
+            align-self: flex-end;
+        }
+
+        .align-self-flex-center {
+            align-self: flex-center;
+        }
+
+        .valign-text-middle {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .valign-text-bottom {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        .listeners-active,
+        .listeners-active * {
+            pointer-events: auto;
+        }
+
+        .hidden,
+        .hidden * {
+            pointer-events: none;
+            visibility: hidden;
+        }
+
+        .smart-layers-pointers,
+        .smart-layers-pointers * {
+            pointer-events: auto;
+            visibility: visible;
+        }
+
+        .listeners-active-click,
+        .listeners-active-click * {
+            cursor: pointer;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        :root {
+            --baseblack: #000000;
+            --basewhite: #ffffff;
+            --brand-colorsblue: #3b91cf;
+            --brand-colorsblue-light: #e3eeff;
+            --brand-colorsgreen: #44ba8e;
+            --brand-colorsorange: #f19626;
+            --brand-colorsorange-light: #ffe8d3;
+            --brand-colorspink: #f7c6ff;
+            --brand-colorspurple: #65489c;
+            --brand-colorspurple-light: #f2e5ff;
+            --foundation-greennormal: #44ba8e;
+            --foundation-secondarysecondary-500: #3b91cf;
+            --foundationvioletprimary-500: #65489c;
+            --gray-iron--400: #a0a0aa;
+            --gray-iron--500: #6f707b;
+            --gray-iron--600: #51515b;
+            --gray-iron--700: #3e3e46;
+            --gray-iron--800: #26262a;
+            --gray100: #f2f3f6;
+            --gray25: #fbfcfc;
+            --gray300: #cfd4dc;
+            --gray400: #98a1b2;
+            --gray50: #f8f9fb;
+            --gray500: #667084;
+            --gray600: #475466;
+            --gray700: #344053;
+            --gray800: #1d2838;
+            --gray900: #0f1728;
+            --mirage: #10182829;
+            --white: #ffffffb2;
+            --white-2: #ffffff33;
+            --white-3: #ffffff70;
+
+            --font-size-12px: 12px;
+            --font-size-24px: 24px;
+            --font-size-36px: 36px;
+            --font-size-48px: 48px;
+            --font-size-l: 20px;
+            --font-size-m: 18px;
+            --font-size-s: 16px;
+            --font-size-xl: 30px;
+            --font-size-xs: 14px;
+            --font-size-xxl: 60px;
+            --font-size-xxxl: 76px;
+
+            --font-family-inter: "Inter", Helvetica;
+        }
+
+        .text-smmedium {
+            font-family: var(--font-family-inter);
+            font-size: var(--font-size-xs);
+            font-style: normal;
+            font-weight: 500;
+            letter-spacing: 0px;
+        }
+
+        .text-mdmedium {
+            font-family: var(--font-family-inter);
+            font-size: var(--font-size-s);
+            font-style: normal;
+            font-weight: 500;
+            letter-spacing: 0px;
+        }
+
+        .text-mdsemibold {
+            font-family: var(--font-family-inter);
+            font-size: var(--font-size-s);
+            font-style: normal;
+            font-weight: 600;
+            letter-spacing: 0px;
+        }
+
+        .display-lgsemibold {
+            font-family: var(--font-family-inter);
+            font-size: var(--font-size-48px);
+            font-style: normal;
+            font-weight: 600;
+            letter-spacing: -0.96px;
+        }
+
+        .text-xlregular {
+            font-family: var(--font-family-inter);
+            font-size: var(--font-size-l);
+            font-style: normal;
+            font-weight: 400;
+            letter-spacing: 0px;
+        }
+
+        .text-xlsemibold {
+            font-family: var(--font-family-inter);
+            font-size: var(--font-size-l);
+            font-style: normal;
+            font-weight: 600;
+            letter-spacing: 0px;
+        }
+
+        .text-mdregular {
+            font-family: var(--font-family-inter);
+            font-size: var(--font-size-s);
+            font-style: normal;
+            font-weight: 400;
+            letter-spacing: 0px;
+        }
+
+        .text-lgsemibold {
+            font-family: var(--font-family-inter);
+            font-size: var(--font-size-m);
+            font-style: normal;
+            font-weight: 600;
+            letter-spacing: 0px;
+        }
+
+        .display-smsemibold {
+            font-family: var(--font-family-inter);
+            font-size: var(--font-size-xl);
+            font-style: normal;
+            font-weight: 600;
+            letter-spacing: 0px;
+        }
+
+        .display-xsmedium {
+            font-family: var(--font-family-inter);
+            font-size: var(--font-size-24px);
+            font-style: normal;
+            font-weight: 500;
+            letter-spacing: 0px;
+        }
+
+        .text-xlmedium {
+            font-family: var(--font-family-inter);
+            font-size: var(--font-size-l);
+            font-style: normal;
+            font-weight: 500;
+            letter-spacing: 0px;
+        }
+
+        .text-smsemibold {
+            font-family: var(--font-family-inter);
+            font-size: var(--font-size-xs);
+            font-style: normal;
+            font-weight: 600;
+            letter-spacing: 0px;
+        }
+
+        .text-lgmedium {
+            font-family: var(--font-family-inter);
+            font-size: var(--font-size-m);
+            font-style: normal;
+            font-weight: 500;
+            letter-spacing: 0px;
+        }
+
+        .display-smbold {
+            font-family: var(--font-family-inter);
+            font-size: var(--font-size-xl);
+            font-style: normal;
+            font-weight: 700;
+            letter-spacing: 0px;
+        }
+
+        .text-lgregular {
+            font-family: var(--font-family-inter);
+            font-size: var(--font-size-m);
+            font-style: normal;
+            font-weight: 400;
+            letter-spacing: 0px;
+        }
+
+        .display-xssemibold {
+            font-family: var(--font-family-inter);
+            font-size: var(--font-size-24px);
+            font-style: normal;
+            font-weight: 600;
+            letter-spacing: 0px;
+        }
+
+        .text-smregular {
+            font-family: var(--font-family-inter);
+            font-size: var(--font-size-xs);
+            font-style: normal;
+            font-weight: 400;
+            letter-spacing: 0px;
+        }
+
+        .display-smregular {
+            font-family: var(--font-family-inter);
+            font-size: var(--font-size-xl);
+            font-style: normal;
+            font-weight: 400;
+            letter-spacing: 0px;
+        }
+
+        .display-mdbold {
+            font-family: var(--font-family-inter);
+            font-size: var(--font-size-36px);
+            font-style: normal;
+            font-weight: 700;
+            letter-spacing: -0.72px;
+        }
+
+        .text-xsmedium {
+            font-family: var(--font-family-inter);
+            font-size: var(--font-size-12px);
+            font-style: normal;
+            font-weight: 500;
+            letter-spacing: 0px;
+        }
+
+        .inter-black-shark-64px {
+            color: var(--gray-iron--800);
+            font-family: var(--font-family-inter);
+            font-size: 64px;
+            font-style: normal;
+            font-weight: 900;
+        }
+
+        .inter-black-shark-128px {
+            color: var(--gray-iron--800);
+            font-family: var(--font-family-inter);
+            font-size: 128px;
+            font-style: normal;
+            font-weight: 900;
+        }
+
+        .inter-black-mirage-60px {
+            color: var(--gray900);
+            font-family: var(--font-family-inter);
+            font-size: var(--font-size-xxl);
+            font-style: normal;
+            font-weight: 900;
+        }
+
+        .inter-black-shark-76px {
+            color: var(--gray-iron--800);
+            font-family: var(--font-family-inter);
+            font-size: var(--font-size-xxxl);
+            font-style: normal;
+            font-weight: 900;
+        }
+
+        :root {
+        }
+
+
+        .input-field {
+            align-items: flex-start;
+            background-color: transparent;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            position: relative;
+        }
+
+        .input-with-label {
+            align-items: flex-start;
+            align-self: stretch;
+            background-color: transparent;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            position: relative;
+            width: 100%;
+        }
+
+        .text {
+            background-color: transparent;
+            font-style: normal;
+            position: relative;
+        }
+
+        .line-536 {
+            align-self: stretch;
+            background-color: transparent;
+            height: 1px;
+            object-fit: cover;
+            position: relative;
+            width: 100%;
+        }
+
+        /* screen - homepage */
+
+        .homepage {
+            background-color: var(--gray50);
+            height: 4320px;
+            overflow: hidden;
+            overflow-x: hidden;
+            position: relative;
+            width: 1440px;
+        }
+
+        .homepage .frame-62958812-zYNucu {
+            background-color: transparent;
+            height: 835px;
+            left: 0px;
+            position: absolute;
+            top: 0px;
+            width: 1440px;
+        }
+
+        .homepage .ellipse-2030-1pgUOe {
+            background-color: #ef4d3e;
+            border-radius: 16px;
+            height: 32px;
+            left: 1006px;
+            position: absolute;
+            top: 462px;
+            width: 32px;
+        }
+
+        .homepage .star-01-1pgUOe {
+            background-color: transparent;
+            height: 24px;
+            left: 1292px;
+            position: absolute;
+            top: 306px;
+            width: 24px;
+        }
+
+        .homepage .ellipse-2024-1pgUOe {
+            background-color: #ef4d3e3d;
+            border-radius: 265px/232.5px;
+            height: 465px;
+            left: 888px;
+            top: 159px;
+            width: 530px;
+        }
+
+        .homepage .ellipse-2023-1pgUOe {
+            background-color: #f196263d;
+            border-radius: 152px;
+            filter: blur(150px);;
+            height: 304px;
+            left: 1171px;
+            position: absolute;
+            top: 248px;
+            width: 304px;
+        }
+
+        .homepage .frame-62959288-1pgUOe {
+            align-items: center;
+            background-color: transparent;
+            display: flex;
+            gap: 81px;
+            height: 140px;
+            justify-content: space-around;
+            left: 0px;
+            padding: 48px 80px;
+            position: absolute;
+            top: 0px;
+            width: 1440px;
+        }
+
+        .homepage .frame-62958773-0plW6i {
+            align-items: center;
+            background-color: transparent;
+            display: inline-flex;
+            flex: 0 0 auto;
+            gap: 100px;
+            position: relative;
+        }
+
+        .homepage .frame-62959091-CnrxSW {
+            background-color: transparent;
+            height: 42px;
+            position: relative;
+            width: 114px;
+        }
+
+        .homepage .frame-62958772-CnrxSW {
+            background-color: transparent;
+            height: 24px;
+            position: relative;
+            width: 321px;
+        }
+
+        .homepage .home-vZ0B6Y {
+            background-color: transparent;
+            color: var(--gray-iron--800);
+            font-style: normal;
+            font-weight: 600;
+            height: auto;
+            left: 0px;
+            line-height: 24px;
+            position: absolute;
+            text-align: left;
+            top: -1px;
+            white-space: nowrap;
+            width: auto;
+        }
+
+        .homepage .about-us-vZ0B6Y {
+            background-color: transparent;
+            color: var(--gray-iron--500);
+            font-style: normal;
+            font-weight: 500;
+            height: auto;
+            left: 106px;
+            line-height: 24px;
+            position: absolute;
+            text-align: left;
+            top: -1px;
+            white-space: nowrap;
+            width: auto;
+        }
+
+        .homepage .contact-us-vZ0B6Y {
+            background-color: transparent;
+            color: var(--gray-iron--500);
+            font-style: normal;
+            font-weight: 500;
+            height: auto;
+            left: 236px;
+            line-height: 24px;
+            position: absolute;
+            text-align: left;
+            top: -1px;
+            white-space: nowrap;
+            width: auto;
+        }
+
+        .homepage .line-542-vZ0B6Y {
+            background-color: transparent;
+            height: 2px;
+            left: -1px;
+            position: absolute;
+            top: 31px;
+            width: 48px;
+        }
+
+        .homepage .frame-62958790-1pgUOe {
+            background-color: transparent;
+            height: 72px;
+            left: 1035px;
+            position: absolute;
+            top: 740px;
+            width: 259px;
+        }
+
+        .homepage .supporting-text-NMKxxj {
+            color: var(--gray800);
+            font-weight: 500;
+            height: auto;
+            left: 24px;
+            line-height: 24px;
+            position: absolute;
+            top: -1px;
+            width: 403px;
+        }
+
+        .homepage .line-516-NMKxxj {
+            background-color: transparent;
+            height: 74px;
+            left: -1px;
+            position: absolute;
+            top: -1px;
+            width: 2px;
+        }
+
+        .homepage .x156-3-NMKxxj {
+            background-color: transparent;
+            height: 28px;
+            left: 24px;
+            object-fit: cover;
+            position: absolute;
+            top: 44px;
+            width: 28px;
+        }
+
+        .homepage .image-NMKxxj {
+            background-color: transparent;
+            height: 32px;
+            left: 116px;
+            position: absolute;
+            top: 40px;
+            width: 36px;
+        }
+
+        .homepage .mahak-iscc-charity_prev_ui-NMKxxj {
+            background-color: transparent;
+            height: 32px;
+            left: 222px;
+            position: absolute;
+            top: 40px;
+            width: 32px;
+        }
+
+        .homepage .isfahan_-medical_-university-4-NMKxxj {
+            background-color: transparent;
+            height: 32px;
+            left: 72px;
+            position: absolute;
+            top: 40px;
+            width: 24px;
+        }
+
+        .homepage .persha_prev_ui-NMKxxj {
+            background-color: transparent;
+            height: 32px;
+            left: 170px;
+            position: absolute;
+            top: 40px;
+            width: 32px;
+        }
+
+        .homepage .frame-62959180-1pgUOe {
+            align-items: flex-start;
+            background-color: transparent;
+            border-radius: 24px;
+            display: inline-flex;
+            gap: 60px;
+            left: 92px;
+            padding: 24px 32px;
+            position: absolute;
+            top: 717px;
+        }
+
+        .homepage .frame-629442-QoyNDL {
+            align-items: flex-start;
+            background-color: transparent;
+            display: inline-flex;
+            flex: 0 0 auto;
+            flex-direction: column;
+            gap: 8px;
+            justify-content: center;
+            position: relative;
+        }
+
+        .homepage .x131-k-h95tlz {
+            background-color: transparent;
+            color: var(--gray900);
+            font-style: normal;
+            font-weight: 600;
+            line-height: 38px;
+            margin-top: -1.00px;
+            position: relative;
+            text-align: center;
+            white-space: nowrap;
+            width: fit-content;
+        }
+
+        .homepage .uploaded-documents-tSNxGj {
+            background-color: transparent;
+            color: var(--gray600);
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px;
+            position: relative;
+            text-align: center;
+            white-space: nowrap;
+            width: fit-content;
+        }
+
+        .homepage .frame-62958749-QoyNDL {
+            align-items: flex-start;
+            background-color: transparent;
+            display: inline-flex;
+            flex: 0 0 auto;
+            flex-direction: column;
+            gap: 8px;
+            justify-content: center;
+            position: relative;
+        }
+
+        .homepage .x53-k-QWzHMT {
+            background-color: transparent;
+            color: var(--gray900);
+            font-style: normal;
+            font-weight: 600;
+            line-height: 38px;
+            margin-top: -1.00px;
+            position: relative;
+            text-align: center;
+            white-space: nowrap;
+            width: fit-content;
+        }
+
+        .homepage .task-created-UNxKZs {
+            background-color: transparent;
+            color: var(--gray600);
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px;
+            position: relative;
+            text-align: center;
+            white-space: nowrap;
+            width: fit-content;
+        }
+
+        .homepage .frame-62958750-QoyNDL {
+            align-items: flex-start;
+            background-color: transparent;
+            display: inline-flex;
+            flex: 0 0 auto;
+            flex-direction: column;
+            gap: 8px;
+            justify-content: center;
+            position: relative;
+        }
+
+        .homepage .x4-k-Dsrh3F {
+            background-color: transparent;
+            color: var(--gray900);
+            font-style: normal;
+            font-weight: 600;
+            line-height: 38px;
+            margin-top: -1.00px;
+            position: relative;
+            text-align: center;
+            white-space: nowrap;
+            width: fit-content;
+        }
+
+        .homepage .action-plans-lt1xP3 {
+            background-color: transparent;
+            color: var(--gray600);
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px;
+            position: relative;
+            text-align: center;
+            white-space: nowrap;
+            width: fit-content;
+        }
+
+        .homepage .frame-62959177-1pgUOe {
+            background-color: transparent;
+            height: 319px;
+            left: 1017px;
+            position: absolute;
+            top: 289px;
+            width: 319px;
+        }
+
+        .homepage .rectangle-445-bBGCUt {
+            -webkit-backdrop-filter: blur(17px) brightness(100%);
+            backdrop-filter: blur(17px) brightness(100%);
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.6600000262260437) 0%, rgba(255, 255, 255, 0) 100%);
+            background-color: transparent;
+            border: 1px solid;
+            border-color: transparent;
+            border-image: linear-gradient(to bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0)) 1;
+            border-radius: 24px;
+            box-shadow: 0px -6px 94px #c9d1d780;
+            height: 280px;
+            left: 0px;
+            position: absolute;
+            top: 0px;
+            width: 280px;
+        }
+
+        .homepage .pngwing-3-bBGCUt {
+            background-color: transparent;
+            height: 437px;
+            left: -56px;
+            object-fit: cover;
+            position: absolute;
+            top: -157px;
+            width: 336px;
+        }
+
+        .homepage .heading-1pgUOe {
+            color: transparent;
+            font-family: var(--font-family-inter);
+            font-size: var(--font-size-xxl);
+            font-weight: 900;
+            height: auto;
+            left: 112px;
+            letter-spacing: -2.10px;
+            line-height: 71px;
+            position: absolute;
+            text-align: left;
+            top: 219px;
+            width: 766px;
+        }
+
+        .homepage .span0-1IMiix {
+            font-style: normal;
+        }
+
+        .homepage .span1-1IMiix {
+            color: var(--brand-colorsblue);
+            font-style: normal;
+        }
+
+        .homepage .span2-1IMiix {
+            font-style: normal;
+        }
+
+        .homepage .span3-1IMiix {
+            color: var(--brand-colorsorange);
+            font-style: normal;
+        }
+
+        .homepage .span4-1IMiix {
+            font-style: normal;
+        }
+
+        .homepage .span5-1IMiix {
+            color: var(--brand-colorsgreen);
+            font-style: normal;
+        }
+
+        .homepage .component-1-1pgUOe {
+            align-items: center;
+            background-color: var(--gray-iron--800);
+            border-radius: 8px;
+            display: inline-flex;
+            gap: 12px;
+            justify-content: center;
+            left: 112px;
+            overflow: hidden;
+            padding: 16px 28px;
+            position: absolute;
+            top: 577px;
+        }
+
+        .homepage .text-JWAAgi {
+            color: var(--basewhite);
+            font-weight: 600;
+            line-height: 28px;
+            margin-top: -1.00px;
+            text-align: left;
+            white-space: nowrap;
+            width: fit-content;
+        }
+
+        .homepage .supporting-text-1pgUOe {
+            color: var(--gray-iron--600);
+            font-weight: 500;
+            height: auto;
+            left: 112px;
+            line-height: 32px;
+            position: absolute;
+            top: 472px;
+            width: 560px;
+        }
+
+        .homepage .frame-62959265-zYNucu {
+            align-items: center;
+            background-color: transparent;
+            border-bottom-style: none;
+            border-color: var(--mirage);
+            border-left-style: none;
+            border-right-style: none;
+            border-top-style: solid;
+            border-top-width: 1px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: center;
+            left: 0px;
+            overflow: hidden;
+            padding: 40px 112px;
+            position: absolute;
+            top: 4177px;
+            width: 1440px;
+        }
+
+        .homepage .frame-62959042-kSk1TA {
+            align-items: center;
+            align-self: stretch;
+            background-color: transparent;
+            display: flex;
+            flex: 0 0 auto;
+            justify-content: space-between;
+            position: relative;
+            width: 100%;
+        }
+
+        .homepage .frame-62959041-ADQ2xB {
+            align-items: center;
+            background-color: transparent;
+            display: inline-flex;
+            flex: 0 0 auto;
+            gap: 36px;
+            justify-content: center;
+            position: relative;
+        }
+
+        .homepage .frame-62959093-vX6eej {
+            background-color: transparent;
+            height: 63px;
+            position: relative;
+            width: 171px;
+        }
+
+        .homepage .text-vX6eej {
+            color: var(--gray-iron--600);
+            font-weight: 500;
+            line-height: 20px;
+            text-align: left;
+            width: 200px;
+        }
+
+        .homepage .frame-62959040-ADQ2xB {
+            align-items: center;
+            background-color: transparent;
+            display: inline-flex;
+            flex: 0 0 auto;
+            gap: 59px;
+            justify-content: flex-end;
+            position: relative;
+        }
+
+        .homepage .frame-62958861-KJ9oeq {
+            align-items: flex-start;
+            background-color: transparent;
+            display: flex;
+            gap: 60px;
+            justify-content: flex-end;
+            position: relative;
+            width: 257px;
+        }
+
+        .homepage .text-yMrS8H {
+            color: var(--gray-iron--600);
+            font-weight: 500;
+            line-height: 24px;
+            margin-top: -1.00px;
+            text-align: left;
+            white-space: nowrap;
+            width: fit-content;
+        }
+
+        .homepage .text-MyOs8Q {
+            color: var(--gray-iron--600);
+            font-weight: 500;
+            line-height: 24px;
+            margin-top: -1.00px;
+            text-align: left;
+            white-space: nowrap;
+            width: fit-content;
+        }
+
+        .homepage .frame-62958908-KJ9oeq {
+            background-color: transparent;
+            flex: 0 0 auto;
+            position: relative;
+        }
+
+        .homepage .frame-62959303-zYNucu {
+            -webkit-backdrop-filter: blur(22px) brightness(100%);
+            align-items: flex-start;
+            backdrop-filter: blur(22px) brightness(100%);
+            background-color: transparent;
+            border-radius: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            left: 112px;
+            overflow: hidden;
+            padding: 60px 48px;
+            position: absolute;
+            top: 3231px;
+            width: 1216px;
+        }
+
+        .homepage .frame-62958840-MgRmLH {
+            align-items: center;
+            align-self: stretch;
+            background-color: transparent;
+            display: flex;
+            flex: 0 0 auto;
+            justify-content: space-between;
+            position: relative;
+            width: 100%;
+        }
+
+        .homepage .frame-62958839-UJx80G {
+            height: 152px;
+            width: 441px;
+        }
+
+        .homepage .heading-KctTyC {
+            color: var(--baseblack);
+            font-weight: 600;
+            height: auto;
+            left: 0px;
+            line-height: 38px;
+            position: absolute;
+            text-align: left;
+            top: -1px;
+            white-space: nowrap;
+            width: auto;
+        }
+
+        .homepage .heading-eK3Dg6 {
+            color: var(--gray800);
+            font-weight: 500;
+            height: auto;
+            left: 0px;
+            line-height: 30px;
+            position: absolute;
+            text-align: left;
+            top: 61px;
+            width: 441px;
+        }
+
+        .homepage .ellipse-2024-KctTyC {
+            background-color: #3b91cf12;
+            border-radius: 1122.5px/395px;
+            height: 790px;
+            left: -513px;
+            top: -333px;
+            width: 2245px;
+        }
+
+        .homepage .frame-62958838-UJx80G {
+            background-color: transparent;
+            height: 420px;
+            position: relative;
+            width: 536px;
+        }
+
+        .homepage .frame-62958837-oDCYL1 {
+            background-color: transparent;
+            height: 420px;
+            left: 28px;
+            position: relative;
+            top: 0px;
+            width: 508px;
+        }
+
+        .homepage .frame-62958845-KyAXSF {
+            -webkit-backdrop-filter: blur(277px) brightness(100%);
+            backdrop-filter: blur(277px) brightness(100%);
+            background-color: var(--basewhite);
+            border-radius: 8px;
+            gap: 10px;
+            height: 88px;
+            justify-content: center;
+            left: -55px;
+            opacity: 0.4;
+            overflow: hidden;
+            padding: 24px;
+            position: absolute;
+            top: 308px;
+        }
+
+        .homepage .frame-62958826-Xvnae1 {
+            margin-bottom: -4.00px;
+            margin-top: -4.00px;
+        }
+
+        .homepage .frame-62958768-bsUJxW {
+            height: 36px;
+            width: 36px;
+        }
+
+        .homepage .user-01-0fVNNt {
+            height: 16px;
+            left: 10px;
+            top: 10px;
+            width: 16px;
+        }
+
+        .homepage .text-08oaYe {
+            color: var(--gray500);
+            font-weight: 500;
+            line-height: 24px;
+            margin-top: -1.00px;
+            text-align: left;
+            white-space: nowrap;
+            width: fit-content;
+        }
+
+        .homepage .text-PYEJGq {
+            color: var(--gray900);
+            font-weight: 600;
+            line-height: 24px;
+            text-align: left;
+            white-space: nowrap;
+            width: fit-content;
+        }
+
+        .homepage .frame-62958840-KyAXSF {
+            -webkit-backdrop-filter: blur(277px) brightness(100%);
+            align-items: flex-start;
+            backdrop-filter: blur(277px) brightness(100%);
+            background-color: var(--basewhite);
+            border-radius: 8px;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            left: -55px;
+            opacity: 0.4;
+            overflow: hidden;
+            padding: 24px;
+            position: absolute;
+            top: 24px;
+            width: 460px;
+        }
+
+        .homepage .frame-62958768-qoBdxd {
+            height: 36px;
+            width: 36px;
+        }
+
+        .homepage .user-01-orSaPs {
+            height: 16px;
+            left: 10px;
+            top: 10px;
+            width: 16px;
+        }
+
+        .homepage .text-gg0aRR {
+            color: var(--gray500);
+            font-weight: 500;
+            line-height: 20px;
+            margin-top: -1.00px;
+            text-align: left;
+            white-space: nowrap;
+            width: fit-content;
+        }
+
+        .homepage .text-03qFLO {
+            color: var(--gray900);
+            font-weight: 600;
+            line-height: 20px;
+            text-align: left;
+            white-space: nowrap;
+            width: fit-content;
+        }
+
+        .homepage .frame-62958844-KyAXSF {
+            -webkit-backdrop-filter: blur(14px) brightness(100%);
+            align-items: flex-start;
+            backdrop-filter: blur(14px) brightness(100%);
+            background-color: #ffffff80;
+            border: 1px solid;
+            border-color: transparent;
+            border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3700000047683716), rgba(255, 255, 255, 0)) 1;
+            border-radius: 8px;
+            box-shadow: 0px 4px 64px #84adc933;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            left: -18px;
+            overflow: hidden;
+            padding: 32px;
+            position: absolute;
+            top: 100px;
+            width: 492px;
+        }
+
+        .homepage .frame-62958768-dHYzl0 {
+            height: 48px;
+            width: 48px;
+        }
+
+        .homepage .user-01-jPKtqo {
+            height: 24px;
+            left: 12px;
+            top: 12px;
+            width: 24px;
+        }
+
+        .homepage .text-a0H0hI {
+            color: var(--gray500);
+            font-weight: 500;
+            line-height: 24px;
+            margin-top: -1.00px;
+            text-align: center;
+            white-space: nowrap;
+            width: fit-content;
+        }
+
+        .homepage .al-zahra-hospital-qu-a0H0hI {
+            background-color: transparent;
+            color: var(--gray900);
+            font-style: normal;
+            font-weight: 600;
+            line-height: 24px;
+            position: relative;
+            text-align: center;
+            white-space: nowrap;
+            width: fit-content;
+        }
+
+        .homepage .in-hospitech-system-rqzi2i {
+            background-color: transparent;
+            color: var(--gray600);
+            font-style: normal;
+            font-weight: 500;
+            line-height: 28px;
+            margin-right: -32.00px;
+            position: relative;
+            text-align: left;
+            width: 460px;
+        }
+
+        .homepage .frame-62959035-zYNucu {
+            align-items: center;
+            background-color: transparent;
+            border-radius: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            left: -1px;
+            overflow: hidden;
+            padding: 100px 20px;
+            position: absolute;
+            top: 3771px;
+            width: 1440px;
+        }
+
+        .homepage .frame-62959014-yw7YzX {
+            align-items: center;
+            background-color: transparent;
+            display: inline-flex;
+            flex: 0 0 auto;
+            flex-direction: column;
+            gap: 32px;
+            position: relative;
+        }
+
+        .homepage .frame-62958839-bMs3At {
+            align-items: center;
+            display: inline-flex;
+            flex: 0 0 auto;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .homepage .heading-khbWec {
+            color: var(--baseblack);
+            font-weight: 600;
+            line-height: 38px;
+            margin-top: -1.00px;
+            position: relative;
+            text-align: center;
+            white-space: nowrap;
+            width: fit-content;
+        }
+
+        .homepage .heading-5Amnab {
+            color: var(--gray600);
+            font-weight: 500;
+            line-height: 30px;
+            position: relative;
+            text-align: center;
+            width: 740px;
+        }
+
+        .homepage .frame-62959031-khbWec {
+            background-color: transparent;
+            height: 406px;
+            left: -349px;
+            position: absolute;
+            top: -100px;
+            width: 1418px;
+        }
+
+        .homepage .button-bMs3At {
+            align-items: center;
+            background-color: var(--baseblack);
+            border-radius: 8px;
+            box-shadow: 0px 1px 2px #1018280d;
+            display: inline-flex;
+            flex: 0 0 auto;
+            gap: 12px;
+            justify-content: center;
+            overflow: hidden;
+            padding: 16px 28px;
+            position: relative;
+        }
+
+        .homepage .text-NDVrXf {
+            color: var(--gray25);
+            font-weight: 600;
+            line-height: 28px;
+            margin-top: -1.00px;
+            text-align: left;
+            white-space: nowrap;
+            width: fit-content;
+        }
+
+        .homepage .frame-62959292-zYNucu {
+            background-color: transparent;
+            height: 377px;
+            left: 112px;
+            position: absolute;
+            top: 945px;
+            width: 1216px;
+        }
+
+        .homepage .heading-M5ZThc {
+            color: var(--gray900);
+            font-weight: 600;
+            height: auto;
+            left: 0px;
+            line-height: 38px;
+            position: absolute;
+            text-align: left;
+            top: -1px;
+            width: 406px;
+        }
+
+        .homepage .frame-62959239-M5ZThc {
+            align-items: flex-start;
+            background-color: var(--brand-colorsblue-light);
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            height: 260px;
+            left: 26px;
+            padding: 32px 40px;
+            position: absolute;
+            top: 117px;
+            width: 380px;
+        }
+
+        .homepage .frame-62959289-x58AH4 {
+            align-items: center;
+            background-color: transparent;
+            display: inline-flex;
+            flex: 0 0 auto;
+            gap: 16px;
+            justify-content: center;
+            position: relative;
+        }
+
+        .homepage .frame-62958798-p8YI2S {
+            background-color: #2690cd;
+        }
+
+        .homepage .clock-plus-x2emrC {
+            background-color: transparent;
+            height: 24px;
+            left: 12px;
+            position: absolute;
+            top: 12px;
+            width: 24px;
+        }
+
+        .homepage .heading-p8YI2S {
+            color: var(--gray-iron--800);
+            font-weight: 700;
+            line-height: 38px;
+            position: relative;
+            text-align: left;
+            white-space: nowrap;
+            width: fit-content;
+        }
+
+        .homepage .supporting-text-x58AH4 {
+            color: var(--gray600);
+            font-weight: 400;
+            line-height: 30px;
+            margin-right: -4.00px;
+            position: relative;
+            width: 304px;
+        }
+
+        .homepage .frame-62959240-M5ZThc {
+            align-items: flex-start;
+            background-color: var(--brand-colorsorange-light);
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            height: 260px;
+            left: 431px;
+            overflow: hidden;
+            padding: 40px;
+            position: absolute;
+            top: 24px;
+            width: 380px;
+        }
+
+        .homepage .frame-62959290-3w7pxQ {
+            align-items: center;
+            background-color: transparent;
+            display: inline-flex;
+            flex: 0 0 auto;
+            gap: 16px;
+            position: relative;
+        }
+
+        .homepage .frame-62958798-tyFS4B {
+            background-color: #f09526;
+        }
+
+        .homepage .users-02-7IunZO {
+            background-color: transparent;
+            height: 24px;
+            left: 12px;
+            position: absolute;
+            top: 12px;
+            width: 24px;
+        }
+
+        .homepage .heading-tyFS4B {
+            color: var(--gray-iron--800);
+            font-weight: 700;
+            line-height: 38px;
+            position: relative;
+            text-align: left;
+            white-space: nowrap;
+            width: fit-content;
+        }
+
+        .homepage .supporting-text-3w7pxQ {
+            align-self: stretch;
+            color: var(--gray600);
+            font-weight: 400;
+            line-height: 30px;
+            margin-bottom: -5.00px;
+            position: relative;
+        }
+
+        .homepage .frame-62959241-M5ZThc {
+            align-items: flex-start;
+            background-color: var(--brand-colorspurple-light);
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            height: 260px;
+            left: 836px;
+            overflow: hidden;
+            padding: 40px;
+            position: absolute;
+            top: 69px;
+            width: 380px;
+        }
+
+        .homepage .frame-62959291-FLalgX {
+            align-items: center;
+            background-color: transparent;
+            display: inline-flex;
+            flex: 0 0 auto;
+            gap: 16px;
+            position: relative;
+        }
+
+        .homepage .frame-62958798-5nK29i {
+            background-color: #65499c;
+        }
+
+        .homepage .bank-note-03-pix8lt {
+            background-color: transparent;
+            height: 24px;
+            left: 12px;
+            position: absolute;
+            top: 12px;
+            width: 24px;
+        }
+
+        .homepage .heading-5nK29i {
+            color: var(--gray-iron--800);
+            font-weight: 700;
+            line-height: 38px;
+            position: relative;
+            text-align: left;
+            white-space: nowrap;
+            width: fit-content;
+        }
+
+        .homepage .supporting-text-FLalgX {
+            align-self: stretch;
+            color: var(--gray600);
+            font-weight: 400;
+            line-height: 30px;
+            margin-bottom: -5.00px;
+            position: relative;
+        }
+
+        .homepage .frame-62959296-zYNucu {
+            -webkit-backdrop-filter: blur(17px) brightness(100%);
+            align-items: center;
+            backdrop-filter: blur(17px) brightness(100%);
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.3199999928474426) 0%, rgba(255, 255, 255, 0) 100%);
+            background-color: transparent;
+            border: 1px solid;
+            border-color: transparent;
+            border-image: linear-gradient(to bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0)) 1;
+            border-radius: 24px;
+            box-shadow: 0px -6px 94px #c9d1d780;
+            display: flex;
+            gap: 32px;
+            left: 112px;
+            padding: 32px;
+            position: absolute;
+            top: 1432px;
+            width: 1216px;
+        }
+
+        .homepage .screenshot-1402-06-09-at-1052-2-AQ4jtx {
+            background-color: transparent;
+            height: 421px;
+            position: relative;
+            width: 620px;
+        }
+
+        .homepage .frame-62958846-AQ4jtx {
+            justify-content: space-between;
+        }
+
+        .homepage .frame-62958844-gKAqmX {
+            align-items: flex-start;
+            align-self: stretch;
+            background-color: transparent;
+            display: flex;
+            flex: 0 0 auto;
+            flex-direction: column;
+            gap: 20px;
+            position: relative;
+            width: 100%;
+        }
+
+        .homepage .heading-COaaRQ {
+            align-self: stretch;
+            color: var(--gray900);
+            font-weight: 600;
+            line-height: 38px;
+            margin-top: -1.00px;
+            position: relative;
+            text-align: left;
+        }
+
+        .homepage .supporting-text-COaaRQ {
+            align-self: stretch;
+            color: var(--gray600);
+            font-weight: 400;
+            line-height: 28px;
+            position: relative;
+        }
+
+        .homepage .frame-62958845-gKAqmX {
+            background-color: transparent;
+            flex: 0 0 auto;
+            flex-direction: column;
+            gap: 20px;
+            position: relative;
+        }
+
+        .homepage .supporting-text-PSxLUG {
+            color: var(--gray600);
+            flex: 1;
+            font-weight: 400;
+            line-height: 28px;
+            margin-top: -1.00px;
+            position: relative;
+        }
+
+        .homepage .supporting-text-X1HdY9 {
+            color: var(--gray600);
+            flex: 1;
+            font-weight: 400;
+            line-height: 28px;
+            margin-top: -1.00px;
+            position: relative;
+        }
+
+        .homepage .supporting-text-xawQ8D {
+            color: var(--gray600);
+            flex: 1;
+            font-weight: 400;
+            line-height: 28px;
+            margin-top: -1.00px;
+            position: relative;
+        }
+
+        .homepage .frame-62959301-zYNucu {
+            -webkit-backdrop-filter: blur(17px) brightness(100%);
+            align-items: center;
+            backdrop-filter: blur(17px) brightness(100%);
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.3199999928474426) 0%, rgba(255, 255, 255, 0) 100%);
+            background-color: transparent;
+            border: 1px solid;
+            border-color: transparent;
+            border-image: linear-gradient(to bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0)) 1;
+            border-radius: 24px;
+            box-shadow: 0px -6px 94px #c9d1d780;
+            display: flex;
+            gap: 32px;
+            left: 112px;
+            padding: 32px;
+            position: absolute;
+            top: 1997px;
+            width: 1216px;
+        }
+
+        .homepage .screenshot-1402-06-09-at-1035-OOVgye {
+            background-color: transparent;
+            height: 421px;
+            object-fit: cover;
+            position: relative;
+            width: 620px;
+        }
+
+        .homepage .frame-62958846-OOVgye {
+            justify-content: space-between;
+        }
+
+        .homepage .frame-62958844-D1CUTm {
+            align-items: flex-start;
+            align-self: stretch;
+            background-color: transparent;
+            display: flex;
+            flex: 0 0 auto;
+            flex-direction: column;
+            gap: 20px;
+            position: relative;
+            width: 100%;
+        }
+
+        .homepage .heading-iI5uwC {
+            align-self: stretch;
+            color: var(--gray900);
+            font-weight: 600;
+            line-height: 38px;
+            margin-top: -1.00px;
+            position: relative;
+            text-align: left;
+        }
+
+        .homepage .supporting-text-iI5uwC {
+            align-self: stretch;
+            color: var(--gray600);
+            font-weight: 400;
+            line-height: 28px;
+            position: relative;
+        }
+
+        .homepage .frame-62958845-D1CUTm {
+            background-color: transparent;
+            flex: 0 0 auto;
+            flex-direction: column;
+            gap: 20px;
+            position: relative;
+        }
+
+        .homepage .supporting-text-RKhL4P {
+            color: var(--gray600);
+            flex: 1;
+            font-weight: 400;
+            line-height: 28px;
+            margin-top: -1.00px;
+            position: relative;
+        }
+
+        .homepage .supporting-text-5aGcFJ {
+            color: var(--gray600);
+            flex: 1;
+            font-weight: 400;
+            line-height: 28px;
+            margin-top: -1.00px;
+            position: relative;
+        }
+
+        .homepage .supporting-text-MLozRs {
+            color: var(--gray600);
+            flex: 1;
+            font-weight: 400;
+            line-height: 28px;
+            margin-top: -1.00px;
+            position: relative;
+        }
+
+        .homepage .frame-62958844-50UV2K {
+            align-items: center;
+            align-self: stretch;
+            background-color: transparent;
+            display: flex;
+            flex: 0 0 auto;
+            gap: 10px;
+            position: relative;
+            width: 100%;
+        }
+
+        .homepage .supporting-text-xPscYR {
+            color: var(--gray600);
+            flex: 1;
+            font-weight: 400;
+            line-height: 28px;
+            margin-top: -1.00px;
+            position: relative;
+        }
+
+        .homepage .frame-62959302-zYNucu {
+            -webkit-backdrop-filter: blur(17px) brightness(100%);
+            align-items: center;
+            backdrop-filter: blur(17px) brightness(100%);
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.3199999928474426) 0%, rgba(255, 255, 255, 0) 100%);
+            background-color: transparent;
+            border: 1px solid;
+            border-color: transparent;
+            border-image: linear-gradient(to bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0)) 1;
+            border-radius: 24px;
+            box-shadow: 0px -6px 94px #c9d1d780;
+            display: flex;
+            gap: 32px;
+            left: 112px;
+            padding: 32px;
+            position: absolute;
+            top: 2562px;
+            width: 1216px;
+        }
+
+        .homepage .screenshot-1402-06-09-at-1104-1-pKU7VW {
+            background-color: transparent;
+            height: 421px;
+            position: relative;
+            width: 620px;
+        }
+
+        .homepage .frame-62958846-pKU7VW {
+            gap: 20px;
+        }
+
+        .homepage .frame-62958844-HJL987 {
+            align-items: flex-start;
+            align-self: stretch;
+            background-color: transparent;
+            display: flex;
+            flex: 0 0 auto;
+            flex-direction: column;
+            gap: 20px;
+            position: relative;
+            width: 100%;
+        }
+
+        .homepage .heading-95if1o {
+            align-self: stretch;
+            color: var(--gray900);
+            font-weight: 600;
+            line-height: 38px;
+            margin-top: -1.00px;
+            position: relative;
+            text-align: left;
+        }
+
+        .homepage .supporting-text-95if1o {
+            align-self: stretch;
+            color: var(--gray600);
+            font-weight: 400;
+            line-height: 28px;
+            position: relative;
+        }
+
+        .homepage .frame-62958845-HJL987 {
+            background-color: transparent;
+            flex: 0 0 auto;
+            flex-direction: column;
+            gap: 20px;
+            position: relative;
+        }
+
+        .homepage .supporting-text-KxOznU {
+            color: var(--gray600);
+            flex: 1;
+            font-weight: 400;
+            line-height: 28px;
+            margin-top: -1.00px;
+            position: relative;
+        }
+
+        .homepage .supporting-text-RohDxa {
+            color: var(--gray600);
+            flex: 1;
+            font-weight: 400;
+            line-height: 28px;
+            margin-top: -1.00px;
+            position: relative;
+        }
+
+        .homepage .supporting-text-Cqx1MG {
+            color: var(--gray600);
+            flex: 1;
+            font-weight: 400;
+            line-height: 28px;
+            margin-top: -1.00px;
+            position: relative;
+        }
+
+        .homepage .check-circle {
+            background-color: transparent;
+            height: 24px;
+            position: relative;
+            width: 24px;
+        }
+
+        .homepage .ellipse-2024 {
+            filter: blur(150px);;
+            position: absolute;
+        }
+
+        .homepage .frame-629456 {
+            align-items: center;
+            background-color: transparent;
+            display: inline-flex;
+            flex: 0 0 auto;
+            gap: 4px;
+            position: relative;
+        }
+
+        .homepage .frame-62958768 {
+            background-color: var(--basewhite);
+            border-radius: 121px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .homepage .frame-62958798 {
+            border-radius: 48px;
+            height: 48px;
+            overflow: hidden;
+            position: relative;
+            width: 48px;
+        }
+
+        .homepage .frame-62958813 {
+            align-items: flex-start;
+            background-color: transparent;
+            display: inline-flex;
+            flex: 0 0 auto;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .homepage .frame-62958814 {
+            align-items: center;
+            background-color: transparent;
+            display: inline-flex;
+            flex: 0 0 auto;
+            gap: 16px;
+            position: relative;
+        }
+
+        .homepage .frame-62958815 {
+            align-items: flex-start;
+            align-self: stretch;
+            background-color: transparent;
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            flex-grow: 1;
+            gap: 24px;
+            justify-content: center;
+            position: relative;
+        }
+
+        .homepage .frame-62958826 {
+            align-items: flex-start;
+            align-self: stretch;
+            background-color: transparent;
+            display: flex;
+            flex: 0 0 auto;
+            flex-direction: column;
+            gap: 24px;
+            justify-content: center;
+            position: relative;
+            width: 100%;
+        }
+
+        .homepage .frame-62958839 {
+            background-color: transparent;
+            position: relative;
+        }
+
+        .homepage .frame-62958841 {
+            align-items: center;
+            align-self: stretch;
+            background-color: transparent;
+            display: flex;
+            flex: 0 0 auto;
+            gap: 10px;
+            position: relative;
+            width: 100%;
+        }
+
+        .homepage .frame-62958842 {
+            align-items: center;
+            align-self: stretch;
+            background-color: transparent;
+            display: flex;
+            flex: 0 0 auto;
+            gap: 10px;
+            position: relative;
+            width: 100%;
+        }
+
+        .homepage .frame-62958843 {
+            align-items: center;
+            align-self: stretch;
+            background-color: transparent;
+            display: flex;
+            flex: 0 0 auto;
+            gap: 10px;
+            position: relative;
+            width: 100%;
+        }
+
+        .homepage .frame-62958845 {
+            align-items: flex-start;
+            display: flex;
+            width: 460px;
+        }
+
+        .homepage .frame-62958846 {
+            align-items: flex-start;
+            background-color: transparent;
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            flex-grow: 1;
+            height: 370px;
+            position: relative;
+        }
+
+        .homepage .heading {
+            background-color: transparent;
+            font-style: normal;
+        }
+
+        .homepage .plus {
+            background-color: transparent;
+            height: 24px;
+            position: relative;
+            width: 24px;
+        }
+
+        .homepage .supporting-text {
+            background-color: transparent;
+            font-style: normal;
+            text-align: left;
+        }
+
+        .homepage .user-01 {
+            background-color: transparent;
+            position: absolute;
+        }
+    </style>
+<!--    <script id="anime-js-script"-->
+<!--            src="./index_files/anime.min.js"-->
+<!--            integrity="sha256-98Q574VkbV+PkxXCKSgL6jVq9mrVbS7uCdA+vt0sLS8="-->
+<!--            crossorigin="anonymous"></script>-->
+<!--    <script id="imgloaded-js-script"-->
+<!--            src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>-->
+</head>
+<body style="margin: 0;background: #f8f9fb;"
+      data-new-gr-c-s-check-loaded="14.1122.0"
+      data-gr-ext-installed=""><input type="hidden"
+                                      id="anPageName"
+                                      name="page"
+                                      value="homepage">
+<div class="container-center-horizontal">
+    <div class="homepage screen "
+         data-id="1955:25706">
+        <div class="frame-62958812-zYNucu"
+             data-id="1955:25707">
+            <div class="ellipse-2030-1pgUOe"
+                 data-id="1955:25708"></div>
+            <img class="star-01-1pgUOe"
+                 data-id="1955:25709"
+                 src="./index_files/star-01.svg"
+                 anima-src="https://cdn.animaapp.com/projects/64f02bc585c1bf1a9cb5bf60/releases/64f043ac6924531cd799f377/img/star-01.svg"
+                 alt="star-01">
+            <div class="ellipse-2024-1pgUOe ellipse-2024"
+                 data-id="1955:25710"></div>
+            <div class="ellipse-2023-1pgUOe"
+                 data-id="1955:25711"></div>
+            <div class="frame-62959288-1pgUOe"
+                 data-id="1955:25712">
+                <div class="frame-62958773-0plW6i"
+                     data-id="1955:25713"><img class="frame-62959091-CnrxSW"
+                                               data-id="1955:25714"
+                                               src="./index_files/frame-62959091-2.svg"
+                                               anima-src="https://cdn.animaapp.com/projects/64f02bc585c1bf1a9cb5bf60/releases/64f043ac6924531cd799f377/img/frame-62959091-2.svg"
+                                               alt="Frame 62959091">
+                    <div class="frame-62958772-CnrxSW"
+                         data-id="1955:25758">
+                        <div class="home-vZ0B6Y text-mdsemibold"
+                             data-id="1955:25759">Home
+                        </div>
+                        <div class="about-us-vZ0B6Y text-mdmedium link" onClick='window.location="./about-us.html"'
+                             data-id="1955:25760">About us
+                        </div>
+                        <div class="contact-us-vZ0B6Y text-mdmedium link" onClick='window.location="./contact-us.html"'
+                             data-id="1955:25761">Contact us
+                        </div>
+                        <img class="line-542-vZ0B6Y"
+                             data-id="1955:25762"
+                             src="./index_files/line-542-2.svg"
+                             anima-src="https://cdn.animaapp.com/projects/64f02bc585c1bf1a9cb5bf60/releases/64f043ac6924531cd799f377/img/line-542-2.svg"
+                             alt="Line 542"></div>
+                </div>
+            </div>
+            <div class="frame-62958790-1pgUOe"
+                 data-id="1955:25763">
+                <div class="supporting-text-NMKxxj supporting-text text-mdmedium"
+                     data-id="1955:25764">Hospitals that Trusted Us
+                </div>
+                <img class="line-516-NMKxxj"
+                     data-id="1955:25765"
+                     src="./index_files/line-516.svg"
+                     anima-src="https://cdn.animaapp.com/projects/64f02bc585c1bf1a9cb5bf60/releases/64f043ac6924531cd799f377/img/line-516.svg"
+                     alt="Line 516"><img class="x156-3-NMKxxj"
+                                         data-id="1955:25766"
+                                         src="./index_files/156-3@2x.png"
+                                         anima-src="https://cdn.animaapp.com/projects/64f02bc585c1bf1a9cb5bf60/releases/64f043ac6924531cd799f377/img/156-3@2x.png"
+                                         alt="156 3"><img class="image-NMKxxj"
+                                                          data-id="1956:7110"
+                                                          src="./index_files/---------------------@2x.png"
+                                                          anima-src="https://cdn.animaapp.com/projects/64f02bc585c1bf1a9cb5bf60/releases/64f043ac6924531cd799f377/img/---------------------@2x.png"
+                                                          alt="image"><img class="mahak-iscc-charity_prev_ui-NMKxxj"
+                                                                           data-id="1956:7112"
+                                                                           src="./index_files/mahak-iscc-charity-prev-ui@2x.png"
+                                                                           anima-src="https://cdn.animaapp.com/projects/64f02bc585c1bf1a9cb5bf60/releases/64f043ac6924531cd799f377/img/mahak-iscc-charity-prev-ui@2x.png"
+                                                                           alt="Mahak-Iscc-Charity_prev_ui"><img class="isfahan_-medical_-university-4-NMKxxj"
+                                                                                                                 data-id="1955:25769"
+                                                                                                                 src="./index_files/isfahan-medical-university-4@2x.png"
+                                                                                                                 anima-src="https://cdn.animaapp.com/projects/64f02bc585c1bf1a9cb5bf60/releases/64f043ac6924531cd799f377/img/isfahan-medical-university-4@2x.png"
+                                                                                                                 alt="Isfahan_Medical_University 4"><img class="persha_prev_ui-NMKxxj"
+                                                                                                                                                         data-id="1956:7111"
+                                                                                                                                                         src="./index_files/persha-prev-ui@2x.png"
+                                                                                                                                                         anima-src="https://cdn.animaapp.com/projects/64f02bc585c1bf1a9cb5bf60/releases/64f043ac6924531cd799f377/img/persha-prev-ui@2x.png"
+                                                                                                                                                         alt="persha_prev_ui">
+            </div>
+            <div class="frame-62959180-1pgUOe"
+                 data-id="1955:25771">
+                <div class="frame-629442-QoyNDL"
+                     data-id="1955:25772">
+                    <div class="frame-629456"
+                         data-id="1955:25773">
+                        <div class="x131-k-h95tlz display-smsemibold"
+                             data-id="1955:25774">131K
+                        </div>
+                        <img class="plus"
+                             data-id="1955:25775"
+                             src="./index_files/plus.svg"
+                             anima-src="https://cdn.animaapp.com/projects/64f02bc585c1bf1a9cb5bf60/releases/64f043ac6924531cd799f377/img/plus.svg"
+                             alt="plus"></div>
+                    <div class="uploaded-documents-tSNxGj text-mdmedium"
+                         data-id="1955:25776">Uploaded Documents
+                    </div>
+                </div>
+                <div class="frame-62958749-QoyNDL"
+                     data-id="1955:25777">
+                    <div class="frame-629456"
+                         data-id="1955:25778">
+                        <div class="x53-k-QWzHMT display-smsemibold"
+                             data-id="1955:25779">53K
+                        </div>
+                        <img class="plus"
+                             data-id="1955:25780"
+                             src="./index_files/plus.svg"
+                             anima-src="https://cdn.animaapp.com/projects/64f02bc585c1bf1a9cb5bf60/releases/64f043ac6924531cd799f377/img/plus.svg"
+                             alt="plus"></div>
+                    <div class="task-created-UNxKZs text-mdmedium"
+                         data-id="1955:25781">Task Created
+                    </div>
+                </div>
+                <div class="frame-62958750-QoyNDL"
+                     data-id="1955:25782">
+                    <div class="frame-629456"
+                         data-id="1955:25783">
+                        <div class="x4-k-Dsrh3F display-smsemibold"
+                             data-id="1955:25784">4K
+                        </div>
+                        <img class="plus"
+                             data-id="1955:25785"
+                             src="./index_files/plus.svg"
+                             anima-src="https://cdn.animaapp.com/projects/64f02bc585c1bf1a9cb5bf60/releases/64f043ac6924531cd799f377/img/plus.svg"
+                             alt="plus"></div>
+                    <div class="action-plans-lt1xP3 text-mdmedium"
+                         data-id="1955:25786">Action Plans
+                    </div>
+                </div>
+            </div>
+            <div class="frame-62959177-1pgUOe"
+                 data-id="1955:25787">
+                <div class="rectangle-445-bBGCUt"
+                     data-id="1955:25788"></div>
+                <img class="pngwing-3-bBGCUt"
+                     data-id="1955:25789"
+                     src="./index_files/pngwing-3@2x.png"
+                     anima-src="https://cdn.animaapp.com/projects/64f02bc585c1bf1a9cb5bf60/releases/64f043ac6924531cd799f377/img/pngwing-3@2x.png"
+                     alt="pngwing 3"></div>
+            <h1 class="heading-1pgUOe heading"
+                data-id="1955:25790"><span class="span0-1IMiix inter-black-mirage-60px">Transforming Healthcare Management: </span><span class="span1-1IMiix">Simplify</span><span class="span2-1IMiix inter-black-mirage-60px">, </span><span class="span3-1IMiix">Streamline</span><span class="span4-1IMiix inter-black-mirage-60px">, </span><span class="span5-1IMiix">Succeed</span>
+            </h1>
+            <div class="component-1-1pgUOe"
+                 data-id="1955:25791">
+                <div class="text-JWAAgi text text-lgsemibold"
+                     data-id="I1955:25791;1341:29847">Request Demo
+                </div>
+            </div>
+            <p class="supporting-text-1pgUOe supporting-text display-xsmedium"
+               data-id="1955:25792">We Step Over the Complexities and Picture a Broader Vision</p>
+        </div>
+        <div class="frame-62959265-zYNucu"
+             data-id="1955:25794">
+            <div class="frame-62959042-kSk1TA"
+                 data-id="1955:25795">
+                <div class="frame-62959041-ADQ2xB"
+                     data-id="1955:25796"><img class="frame-62959093-vX6eej"
+                                               data-id="1955:25797"
+                                               src="./index_files/frame-62959093-2.svg"
+                                               anima-src="https://cdn.animaapp.com/projects/64f02bc585c1bf1a9cb5bf60/releases/64f043ac6924531cd799f377/img/frame-62959093-2.svg"
+                                               alt="Frame 62959093">
+                    <p class="text-vX6eej text text-smmedium"
+                       data-id="1955:25841">We simplify the management of complex systems with smart
+                        solutions.</p></div>
+                <div class="frame-62959040-ADQ2xB"
+                     data-id="1955:25842">
+                    <div class="frame-62958861-KJ9oeq"
+                         data-id="1955:25843">
+                        <div class="text-yMrS8H text text-mdmedium link" onClick='window.location="./about-us.html"'
+                             data-id="1955:25844">About us
+                        </div>
+                        <div class="text-MyOs8Q text text-mdmedium link" onClick='window.location="./contact-us.html"'
+                             data-id="1955:25845">Contact us
+                        </div>
+                    </div>
+                    <img class="frame-62958908-KJ9oeq"
+                         data-id="1955:25846"
+                         src="./index_files/frame-62958908-2.svg"
+                         anima-src="https://cdn.animaapp.com/projects/64f02bc585c1bf1a9cb5bf60/releases/64f043ac6924531cd799f377/img/frame-62958908-2.svg"
+                         alt="Frame 62958908"></div>
+            </div>
+        </div>
+        <div class="frame-62959303-zYNucu"
+             data-id="1956:6978">
+            <div class="frame-62958840-MgRmLH"
+                 data-id="1956:6979">
+                <div class="frame-62958839-UJx80G frame-62958839"
+                     data-id="1956:6980"><p class="heading-KctTyC heading display-smsemibold"
+                                            data-id="1956:6981">What our clients say about us</p>
+                    <p class="heading-eK3Dg6 heading text-xlmedium"
+                       data-id="1956:6982">Our clients are the lifeblood of our business, and we
+                        take great pride in providing them with exceptional service and support.</p>
+                    <div class="ellipse-2024-KctTyC ellipse-2024"
+                         data-id="1956:6983"></div>
+                </div>
+                <div class="frame-62958838-UJx80G"
+                     data-id="1956:6984">
+                    <div class="frame-62958837-oDCYL1"
+                         data-id="1956:6985">
+                        <div class="frame-62958845-KyAXSF frame-62958845"
+                             data-id="1956:6986">
+                            <div class="frame-62958815"
+                                 data-id="1956:6987">
+                                <div class="frame-62958826-Xvnae1 frame-62958826"
+                                     data-id="1956:6988">
+                                    <div class="frame-62958814"
+                                         data-id="1956:6989">
+                                        <div class="frame-62958768-bsUJxW frame-62958768"
+                                             data-id="1956:6990"><img class="user-01-0fVNNt user-01"
+                                                                      data-id="1956:6991"
+                                                                      src="./index_files/user-01.svg"
+                                                                      anima-src="https://cdn.animaapp.com/projects/64f02bc585c1bf1a9cb5bf60/releases/64f043ac6924531cd799f377/img/user-01.svg"
+                                                                      alt="user-01"></div>
+                                        <div class="frame-62958813"
+                                             data-id="1956:6992">
+                                            <div class="text-08oaYe text text-mdmedium"
+                                                 data-id="1956:6993">Imam Khomeini Hospital Complex
+                                            </div>
+                                            <p class="text-PYEJGq text text-mdsemibold"
+                                               data-id="1956:6994">Imam Khomeini Hospital Complex
+                                                envoy</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frame-62958840-KyAXSF"
+                             data-id="1956:6995">
+                            <div class="frame-62958815"
+                                 data-id="1956:6996">
+                                <div class="frame-62958826"
+                                     data-id="1956:6997">
+                                    <div class="frame-62958814"
+                                         data-id="1956:6998">
+                                        <div class="frame-62958768-qoBdxd frame-62958768"
+                                             data-id="1956:6999"><img class="user-01-orSaPs user-01"
+                                                                      data-id="1956:7000"
+                                                                      src="./index_files/user-01.svg"
+                                                                      anima-src="https://cdn.animaapp.com/projects/64f02bc585c1bf1a9cb5bf60/releases/64f043ac6924531cd799f377/img/user-01.svg"
+                                                                      alt="user-01"></div>
+                                        <div class="frame-62958813"
+                                             data-id="1956:7001">
+                                            <div class="text-gg0aRR text text-smmedium"
+                                                 data-id="1956:7002">Pars Hospital
+                                            </div>
+                                            <div class="text-03qFLO text text-smsemibold"
+                                                 data-id="1956:7003">Pars Hospital envoy
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frame-62958844-KyAXSF"
+                             data-id="1956:7004">
+                            <div class="frame-62958815"
+                                 data-id="1956:7005">
+                                <div class="frame-62958826"
+                                     data-id="1956:7006">
+                                    <div class="frame-62958814"
+                                         data-id="1956:7007">
+                                        <div class="frame-62958768-dHYzl0 frame-62958768"
+                                             data-id="1956:7008"><img class="user-01-jPKtqo user-01"
+                                                                      data-id="1956:7009"
+                                                                      src="./index_files/user-01-2.svg"
+                                                                      anima-src="https://cdn.animaapp.com/projects/64f02bc585c1bf1a9cb5bf60/releases/64f043ac6924531cd799f377/img/user-01-2.svg"
+                                                                      alt="user-01"></div>
+                                        <div class="frame-62958813"
+                                             data-id="1956:7010">
+                                            <div class="text-a0H0hI text text-mdmedium"
+                                                 data-id="1956:7011">Mahnaz Dehbozorgi
+                                            </div>
+                                            <p class="al-zahra-hospital-qu-a0H0hI text-mdsemibold"
+                                               data-id="1956:7012"> al-Zahra Hospital Quality
+                                                Improvement Lead</p></div>
+                                    </div>
+                                </div>
+                                <p class="in-hospitech-system-rqzi2i text-lgmedium"
+                                   data-id="1956:7013">In Hospitech system, you can see all the
+                                    information in an integrated form and easily see the connection
+                                    between the information of different departments</p></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="frame-62959035-zYNucu"
+             data-id="1955:25897">
+            <div class="frame-62959014-yw7YzX"
+                 data-id="1955:25898">
+                <div class="frame-62958839-bMs3At frame-62958839"
+                     data-id="1955:25899">
+                    <div class="heading-khbWec heading display-smsemibold"
+                         data-id="1955:25900">Do you need help?
+                    </div>
+                    <p class="heading-5Amnab heading text-xlmedium"
+                       data-id="1955:25901">Looking for assistance with a task or problem? Need
+                        someone to lend a hand or offer guidance? Whether it's personal or
+                        professional, we're here to help.</p><img class="frame-62959031-khbWec"
+                                                                  data-id="1955:25902"
+                                                                  src="./index_files/frame-62959031.svg"
+                                                                  anima-src="https://cdn.animaapp.com/projects/64f02bc585c1bf1a9cb5bf60/releases/64f043ac6924531cd799f377/img/frame-62959031.svg"
+                                                                  alt="Frame 62959031"></div>
+                <div class="button-bMs3At link" onClick='window.location="./contact-us.html"'
+                     data-id="1955:25911">
+                    <div class="text-NDVrXf text text-lgsemibold"
+                         data-id="I1955:25911;3287:432945">Contact us
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="frame-62959292-zYNucu"
+             data-id="1955:25912">
+            <div class="heading-M5ZThc heading display-smsemibold"
+                 data-id="1955:25913">Cutting-edge software<br>Innovative Features
+            </div>
+            <div class="frame-62959239-M5ZThc"
+                 data-id="1955:25914">
+                <div class="frame-62959289-x58AH4"
+                     data-id="1955:25915">
+                    <div class="frame-62958798-p8YI2S frame-62958798"
+                         data-id="1955:25916"><img class="clock-plus-x2emrC"
+                                                   data-id="1955:25917"
+                                                   src="./index_files/clock-plus.svg"
+                                                   anima-src="https://cdn.animaapp.com/projects/64f02bc585c1bf1a9cb5bf60/releases/64f043ac6924531cd799f377/img/clock-plus.svg"
+                                                   alt="clock-plus"></div>
+                    <div class="heading-p8YI2S heading display-smbold"
+                         data-id="1955:25918">Save Time
+                    </div>
+                </div>
+                <img class="line-536"
+                     data-id="1955:25919"
+                     src="./index_files/line-536.svg"
+                     anima-src="https://cdn.animaapp.com/projects/64f02bc585c1bf1a9cb5bf60/releases/64f02c7890e865fd564815c8/img/line-536.svg"
+                     alt="Line 536">
+                <p class="supporting-text-x58AH4 supporting-text text-xlregular"
+                   data-id="1955:25920">Manage schedule and tasks, streamlining work process and
+                    maximizing productivity</p></div>
+            <div class="frame-62959240-M5ZThc"
+                 data-id="1955:25921">
+                <div class="frame-62959290-3w7pxQ"
+                     data-id="1955:25922">
+                    <div class="frame-62958798-tyFS4B frame-62958798"
+                         data-id="1955:25923"><img class="users-02-7IunZO"
+                                                   data-id="1955:25924"
+                                                   src="./index_files/users-02.svg"
+                                                   anima-src="https://cdn.animaapp.com/projects/64f02bc585c1bf1a9cb5bf60/releases/64f043ac6924531cd799f377/img/users-02.svg"
+                                                   alt="users-02"></div>
+                    <div class="heading-tyFS4B heading display-smbold"
+                         data-id="1955:25925">Save Resources
+                    </div>
+                </div>
+                <img class="line-536"
+                     data-id="1955:25926"
+                     src="./index_files/line-536-2.svg"
+                     anima-src="https://cdn.animaapp.com/projects/64f02bc585c1bf1a9cb5bf60/releases/64f02c7890e865fd564815c8/img/line-536-2.svg"
+                     alt="Line 536">
+                <p class="supporting-text-3w7pxQ supporting-text text-xlregular"
+                   data-id="1955:25927">Significantly reduce waste and optimize resource allocation
+                    for sustainable practices</p></div>
+            <div class="frame-62959241-M5ZThc"
+                 data-id="1955:25928">
+                <div class="frame-62959291-FLalgX"
+                     data-id="1955:25929">
+                    <div class="frame-62958798-5nK29i frame-62958798"
+                         data-id="1955:25930"><img class="bank-note-03-pix8lt"
+                                                   data-id="1955:25931"
+                                                   src="./index_files/bank-note-03.svg"
+                                                   anima-src="https://cdn.animaapp.com/projects/64f02bc585c1bf1a9cb5bf60/releases/64f043ac6924531cd799f377/img/bank-note-03.svg"
+                                                   alt="bank-note-03"></div>
+                    <div class="heading-5nK29i heading display-smbold"
+                         data-id="1955:25932">Save Money
+                    </div>
+                </div>
+                <img class="line-536"
+                     data-id="1955:25933"
+                     src="./index_files/line-536-1.svg"
+                     anima-src="https://cdn.animaapp.com/projects/64f02bc585c1bf1a9cb5bf60/releases/64f02c7890e865fd564815c8/img/line-536-1.svg"
+                     alt="Line 536">
+                <p class="supporting-text-FLalgX supporting-text text-xlregular"
+                   data-id="1955:25934">Streamlining processes and improving efficiency,&nbsp;&nbsp;smart
+                    budget management</p></div>
+        </div>
+        <div class="frame-62959296-zYNucu"
+             data-id="1955:25935"><img class="screenshot-1402-06-09-at-1052-2-AQ4jtx"
+                                       data-id="1956:7115"
+                                       src="./index_files/screenshot-1402-06-09-at-10-52-2.png"
+                                       anima-src="https://cdn.animaapp.com/projects/64f02bc585c1bf1a9cb5bf60/releases/64f043ac6924531cd799f377/img/screenshot-1402-06-09-at-10-52-2.png"
+                                       alt="Screenshot 1402-06-09 at 10.52 2">
+            <div class="frame-62958846-AQ4jtx frame-62958846"
+                 data-id="1955:25937">
+                <div class="frame-62958844-gKAqmX"
+                     data-id="1955:25938">
+                    <div class="heading-COaaRQ heading display-smsemibold"
+                         data-id="1955:25939">Document Management Module
+                    </div>
+                    <p class="supporting-text-COaaRQ supporting-text text-lgregular"
+                       data-id="1955:25940">An efficient tool that helps organizations streamline
+                        their documentation processes. It allows users to easily create, store,
+                        track, and manage various types of documents, including contracts, policies,
+                        procedures, and more.</p></div>
+                <div class="frame-62958845-gKAqmX frame-62958845"
+                     data-id="1955:27077">
+                    <div class="frame-62958841"
+                         data-id="1955:27078"><img class="check-circle"
+                                                   data-id="1955:27079"
+                                                   src="./index_files/check-circle.svg"
+                                                   anima-src="https://cdn.animaapp.com/projects/64f02bc585c1bf1a9cb5bf60/releases/64f043ac6924531cd799f377/img/check-circle.svg"
+                                                   alt="check-circle">
+                        <div class="supporting-text-PSxLUG supporting-text text-lgregular"
+                             data-id="1955:27080">Unlimited Database
+                        </div>
+                    </div>
+                    <div class="frame-62958842"
+                         data-id="1955:27081"><img class="check-circle"
+                                                   data-id="1955:27082"
+                                                   src="./index_files/check-circle.svg"
+                                                   anima-src="https://cdn.animaapp.com/projects/64f02bc585c1bf1a9cb5bf60/releases/64f043ac6924531cd799f377/img/check-circle.svg"
+                                                   alt="check-circle">
+                        <div class="supporting-text-X1HdY9 supporting-text text-lgregular"
+                             data-id="1955:27083">Documents Classification
+                        </div>
+                    </div>
+                    <div class="frame-62958843"
+                         data-id="1955:27084"><img class="check-circle"
+                                                   data-id="1955:27085"
+                                                   src="./index_files/check-circle.svg"
+                                                   anima-src="https://cdn.animaapp.com/projects/64f02bc585c1bf1a9cb5bf60/releases/64f043ac6924531cd799f377/img/check-circle.svg"
+                                                   alt="check-circle">
+                        <div class="supporting-text-xawQ8D supporting-text text-lgregular"
+                             data-id="1955:27086">Quick Access to Information
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="frame-62959301-zYNucu"
+             data-id="1955:25960"><img class="screenshot-1402-06-09-at-1035-OOVgye"
+                                       data-id="1980:21784"
+                                       src="./index_files/screenshot-1402-06-09-at-10-35.png"
+                                       anima-src="https://cdn.animaapp.com/projects/64f02bc585c1bf1a9cb5bf60/releases/64f043ac6924531cd799f377/img/screenshot-1402-06-09-at-10-35.png"
+                                       alt="Screenshot 1402-06-09 at 10.35">
+            <div class="frame-62958846-OOVgye frame-62958846"
+                 data-id="1955:25962">
+                <div class="frame-62958844-D1CUTm"
+                     data-id="1955:25963"><p class="heading-iI5uwC heading display-smsemibold"
+                                             data-id="1955:25964">Project and Tasks Management
+                    Module</p>
+                    <p class="supporting-text-iI5uwC supporting-text text-lgregular"
+                       data-id="1955:27090">it is designed to streamline and automate various
+                        administrative tasks, allowing healthcare professionals to focus on
+                        providing high-quality patient care.</p></div>
+                <div class="frame-62958845-D1CUTm frame-62958845"
+                     data-id="1955:27091">
+                    <div class="frame-62958841"
+                         data-id="1955:27092"><img class="check-circle"
+                                                   data-id="1955:27093"
+                                                   src="./index_files/check-circle.svg"
+                                                   anima-src="https://cdn.animaapp.com/projects/64f02bc585c1bf1a9cb5bf60/releases/64f043ac6924531cd799f377/img/check-circle.svg"
+                                                   alt="check-circle">
+                        <div class="supporting-text-RKhL4P supporting-text text-lgregular"
+                             data-id="1955:27094">Action Plans Management
+                        </div>
+                    </div>
+                    <div class="frame-62958842"
+                         data-id="1955:27095"><img class="check-circle"
+                                                   data-id="1955:27096"
+                                                   src="./index_files/check-circle.svg"
+                                                   anima-src="https://cdn.animaapp.com/projects/64f02bc585c1bf1a9cb5bf60/releases/64f043ac6924531cd799f377/img/check-circle.svg"
+                                                   alt="check-circle">
+                        <div class="supporting-text-5aGcFJ supporting-text text-lgregular"
+                             data-id="1955:27097">Committees Management
+                        </div>
+                    </div>
+                    <div class="frame-62958843"
+                         data-id="1955:27098"><img class="check-circle"
+                                                   data-id="1955:27099"
+                                                   src="./index_files/check-circle.svg"
+                                                   anima-src="https://cdn.animaapp.com/projects/64f02bc585c1bf1a9cb5bf60/releases/64f043ac6924531cd799f377/img/check-circle.svg"
+                                                   alt="check-circle">
+                        <div class="supporting-text-MLozRs supporting-text text-lgregular"
+                             data-id="1955:27100">Meetings Management
+                        </div>
+                    </div>
+                    <div class="frame-62958844-50UV2K"
+                         data-id="1955:27101"><img class="check-circle"
+                                                   data-id="1955:27102"
+                                                   src="./index_files/check-circle.svg"
+                                                   anima-src="https://cdn.animaapp.com/projects/64f02bc585c1bf1a9cb5bf60/releases/64f043ac6924531cd799f377/img/check-circle.svg"
+                                                   alt="check-circle">
+                        <div class="supporting-text-xPscYR supporting-text text-lgregular"
+                             data-id="1955:27103">Scheduling, Budgeting, Reporting
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="frame-62959302-zYNucu"
+             data-id="1955:25982"><img class="screenshot-1402-06-09-at-1104-1-pKU7VW"
+                                       data-id="1956:7116"
+                                       src="./index_files/screenshot-1402-06-09-at-11-04-1.png"
+                                       anima-src="https://cdn.animaapp.com/projects/64f02bc585c1bf1a9cb5bf60/releases/64f043ac6924531cd799f377/img/screenshot-1402-06-09-at-11-04-1.png"
+                                       alt="Screenshot 1402-06-09 at 11.04 1">
+            <div class="frame-62958846-pKU7VW frame-62958846"
+                 data-id="1955:25984">
+                <div class="frame-62958844-HJL987"
+                     data-id="1955:25985"><p class="heading-95if1o heading display-smsemibold"
+                                             data-id="1955:25986">Forms and Reports Management
+                    Module</p>
+                    <p class="supporting-text-95if1o supporting-text text-lgregular"
+                       data-id="1955:25987">Streamlines healthcare data management. Enables easy
+                        form creation, tracking and custom reporting for insights into finances,
+                        treatment, and operations.</p></div>
+                <div class="frame-62958845-HJL987 frame-62958845"
+                     data-id="1955:27114">
+                    <div class="frame-62958841"
+                         data-id="1955:27115"><img class="check-circle"
+                                                   data-id="1955:27116"
+                                                   src="./index_files/check-circle.svg"
+                                                   anima-src="https://cdn.animaapp.com/projects/64f02bc585c1bf1a9cb5bf60/releases/64f043ac6924531cd799f377/img/check-circle.svg"
+                                                   alt="check-circle">
+                        <p class="supporting-text-KxOznU supporting-text text-lgregular"
+                           data-id="1955:27117">Management and Reporting of Indicators</p></div>
+                    <div class="frame-62958842"
+                         data-id="1955:27118"><img class="check-circle"
+                                                   data-id="1955:27119"
+                                                   src="./index_files/check-circle.svg"
+                                                   anima-src="https://cdn.animaapp.com/projects/64f02bc585c1bf1a9cb5bf60/releases/64f043ac6924531cd799f377/img/check-circle.svg"
+                                                   alt="check-circle">
+                        <p class="supporting-text-RohDxa supporting-text text-lgregular"
+                           data-id="1955:27120">Management and Reporting of Checklists</p></div>
+                    <div class="frame-62958843"
+                         data-id="1955:27121"><img class="check-circle"
+                                                   data-id="1955:27122"
+                                                   src="./index_files/check-circle.svg"
+                                                   anima-src="https://cdn.animaapp.com/projects/64f02bc585c1bf1a9cb5bf60/releases/64f043ac6924531cd799f377/img/check-circle.svg"
+                                                   alt="check-circle">
+                        <p class="supporting-text-Cqx1MG supporting-text text-lgregular"
+                           data-id="1955:27123">Management and Reporting of Self-assessments</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--<script src="./index_files/launchpad-banner.js"-->
+<!--        async=""></script>-->
+<!--<script defer=""-->
+<!--        src="./index_files/restart-btn.min.js"></script>-->
+<!--<div id="t_preload_links"></div>-->
+</body>
+</html>
